@@ -5,20 +5,16 @@ import javax.swing.*;
 import visao.Tela;
 
 public class Menu extends JFrame implements ActionListener {
-
-   //cria barra de menu                            
+                            
    private JMenuBar jmPrincipal = new JMenuBar();
 
-   //cria menu "cadastro" na barra de menu
    private JMenu jmCadastro = new JMenu("Cadastros");
    private JMenu jmRelatorio = new JMenu("Relatório");
 
-   //cria item "cliente" dentro do menu "cadastro"
    private JMenuItem jmCadGenerico = new JMenuItem("Veículo genérico");
    private JMenuItem jmCadEsportivo = new JMenuItem("Veículo esportivo");
    private JMenuItem jmCadUtilitario = new JMenuItem("Veículo utilitário");
 
-   //cria objeto jdPane, do tipo JDesktopPane. Ele vai dentro d JFrame
    public  JDesktopPane jdPane = new JDesktopPane();
 
    Tela telaCadGenerico, telaCadEsportivo, telaCadUtilitario;
